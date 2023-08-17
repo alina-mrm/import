@@ -1,0 +1,10 @@
+<mat-card class="file-upload">
+  <mat-card-content>
+    <p class="mat-title">Исходный файл</p>
+    <p>Загрузите заполненный по <a href="/assets/template.xls">шаблону</a> файл для импорта данных.</p>
+    <input type="file" (change)="onFileChange($event)" multiple="false"/>
+  </mat-card-content>
+</mat-card>
+
+<p class="mat-title">Предпросмотр данных</p>
+<app-import-preview [data]="data"></app-import-preview>
